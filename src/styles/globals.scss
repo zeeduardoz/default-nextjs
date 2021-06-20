@@ -1,0 +1,72 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-primary: ;
+  --background-secondary: ;
+
+  --hr-color: ;
+
+  --text-color-light: ;
+  --text-color-medium: ;
+  --text-color-dark: ;
+
+  --btn-color-success: ;
+  --btn-color-info: ;
+  --btn-color-warning: ;
+  --btn-color-danger: ;
+}
+
+[data-theme='dark'] {
+  --background-primary: ;
+  --background-secondary: ;
+
+  --hr-color: ;
+
+  --text-color-light: ;
+  --text-color-medium: ;
+  --text-color-dark: ;
+
+  --btn-color-success: ;
+  --btn-color-info: ;
+  --btn-color-warning: ;
+  --btn-color-danger: ;
+}
+
+.container {
+ width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: auto;
+ margin-left: auto;
+}
+
+@media (min-width: 576px) {
+ .container {
+  max-width: 540px;
+ }
+}
+
+@media (min-width: 768px) {
+ .container {
+  max-width: 720px;
+ }
+}
+
+@media (min-width: 992px) {
+ .container {
+  max-width: 960px;
+ }
+}
+
+@media (min-width: 1200px) {
+ .container {
+  max-width: 1200px;
+ }
+}
+
+button:disabled {
+ opacity: 0.5;
+}
