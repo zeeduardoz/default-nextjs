@@ -1,27 +1,34 @@
 module.exports = {
-  purge: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
+  purge: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: () => ({
+        example:
+          "linear-gradient(to top, var(--gradient) 0%, var(--gradient) 100%), url('/example.png')"
+      }),
       colors: {
-        'background-primary': 'var(--background)',
-        'background-secondary': 'var(--background-secondary)',
+        primary: 'var(--background-primary)',
+        secondary: 'var(--background-secondary)',
 
         'hr-color': 'var(--hr-color)',
 
-        'text-color-light': 'var(--text-color-light)',
-        'text-color-medium': 'var(--text-color-medium)',
-        'text-color-dark': 'var(--text-color-dark)',
+        'color-light': 'var(--text-color-light)',
+        'color-medium': 'var(--text-color-medium)',
+        'color-dark': 'var(--text-color-dark)',
 
-        'btn-color-success': 'var(--btn-color-success)',
-        'btn-color-info': 'var(--btn-color-info)',
-        'btn-color-warning': 'var(--btn-color-warning)',
-        'btn-color-danger': 'var(--btn-color-danger)',
+        'color-success': 'var(--btn-color-success)',
+        'color-info': 'var(--btn-color-info)',
+        'color-warning': 'var(--btn-color-warning)',
+        'color-danger': 'var(--btn-color-danger)'
       }
-    },
+    }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [require('@tailwindcss/custom-forms'),],
+  plugins: [require('@tailwindcss/custom-forms')]
 }

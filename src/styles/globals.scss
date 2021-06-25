@@ -4,69 +4,92 @@
 @tailwind utilities;
 
 :root {
-  --background-primary: ;
-  --background-secondary: ;
+  --background-primary: #e5e7eb;
+  --background-secondary: #f9fafb;
 
-  --hr-color: ;
+  --gradient: rgba(19, 28, 37, 0.95);
 
-  --text-color-light: ;
-  --text-color-medium: ;
-  --text-color-dark: ;
+  --hr-color: #d5d8df;
 
-  --btn-color-success: ;
-  --btn-color-info: ;
-  --btn-color-warning: ;
-  --btn-color-danger: ;
+  --text-color-light: #151c2b;
+  --text-color-medium: #8e94a0;
+  --text-color-dark: #f3f4f6;
+
+  --btn-color-success: #10b981;
+  --btn-color-info: #818cf8;
+  --btn-color-warning: #fbbf24;
+  --btn-color-danger: #f87171;
 }
 
 [data-theme='dark'] {
-  --background-primary: ;
-  --background-secondary: ;
+  --background-primary: #151a22;
+  --background-secondary: #0e1116;
 
-  --hr-color: ;
+  --gradient: rgba(17, 22, 29, 0.95);
 
-  --text-color-light: ;
-  --text-color-medium: ;
-  --text-color-dark: ;
+  --hr-color: #4b5563;
 
-  --btn-color-success: ;
-  --btn-color-info: ;
-  --btn-color-warning: ;
-  --btn-color-danger: ;
+  --text-color-light: #f3f4f6;
+  --text-color-medium: #6b7280;
+  --text-color-dark: #151c2b;
+
+  --btn-color-success: #10b981;
+  --btn-color-info: #818cf8;
+  --btn-color-warning: #fbbf24;
+  --btn-color-danger: #f87171;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
- width: 100%;
- padding-right: 15px;
- padding-left: 15px;
- margin-right: auto;
- margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
- .container {
-  max-width: 540px;
- }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
- .container {
-  max-width: 720px;
- }
+  .container {
+    max-width: 720px;
+  }
 }
 
 @media (min-width: 992px) {
- .container {
-  max-width: 960px;
- }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media (min-width: 1200px) {
- .container {
-  max-width: 1200px;
- }
+  .container {
+    max-width: 1200px;
+  }
 }
 
 button:disabled {
- opacity: 0.5;
+  opacity: 0.5;
+  cursor: default;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #34d399;
+  -webkit-text-fill-color: #059669;
+  transition: background-color 5000s ease-in-out 0s;
 }
