@@ -4,14 +4,14 @@
 @tailwind utilities;
 
 :root {
-  --background-primary: #e5e7eb;
-  --background-secondary: #f9fafb;
+  --background-primary: #f9fafb;
+  --background-secondary: #000000;
 
-  --gradient: rgba(19, 28, 37, 0.95);
+  --gradient: rgba(14, 14, 14, 0.75);
 
   --hr-color: #d5d8df;
 
-  --text-color-light: #151c2b;
+  --text-color-light: #000000;
   --text-color-medium: #8e94a0;
   --text-color-dark: #f3f4f6;
 
@@ -22,16 +22,16 @@
 }
 
 [data-theme='dark'] {
-  --background-primary: #151a22;
-  --background-secondary: #0e1116;
+  --background-primary: #181818;
+  --background-secondary: #000000;
 
-  --gradient: rgba(17, 22, 29, 0.95);
+  --gradient: rgba(14, 14, 14, 0.75);
 
-  --hr-color: #4b5563;
+  --hr-color: #2c2c2c;
 
   --text-color-light: #f3f4f6;
   --text-color-medium: #6b7280;
-  --text-color-dark: #151c2b;
+  --text-color-dark: #000000;
 
   --btn-color-success: #10b981;
   --btn-color-info: #818cf8;
@@ -41,6 +41,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -89,7 +90,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 1px solid #34d399;
+  border-bottom: 2px solid #34d399;
   -webkit-text-fill-color: #059669;
   transition: background-color 5000s ease-in-out 0s;
 }

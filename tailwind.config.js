@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: () => ({
-        example:
-          "linear-gradient(to top, var(--gradient) 0%, var(--gradient) 100%), url('/example.png')"
+        header:
+          "linear-gradient(to top, var(--gradient) 0%, var(--gradient) 100%), url('/bg.png')"
       }),
       colors: {
         primary: 'var(--background-primary)',
